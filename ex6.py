@@ -3,12 +3,12 @@ x = f"there are {types_of_people} types of people."
 #this variable is using f formating to include a variable inside of a string. 
 
 binary = "binary"
-do_not = "don't"
+do_not = "do"
 y = f"those who know {binary} and those who {do_not}."
 #this variable is using f formating to include 2 variables inside of a string. 
 
-print(x)
 print(y)
+print(x)
 
 print(f"I said: {x}")
 # this variable is using f formating to include a variable (which is a string) inside of a string.
@@ -31,7 +31,7 @@ print(joke_evaluation.format(hilarious))
 w = "This is the left side of..."
 e = "a string with a right side."
 
-print(w + e)
+print(w + e!)
 #this statement combine 2 different  variables into a single line. Result: This is the left side of... a string with a right side."
 
 
