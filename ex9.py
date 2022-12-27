@@ -1,6 +1,6 @@
 days = "Mon Tue Wed Thu Fri Sat Sun"
 months = "Jan\nFeb\nMar\nApr\nMay\nJune\nJul\nAug"
-#using /n allows for each word after it to be on a new line.
+#using \n allows for each word after it to be on a new line.
     #Result: Jan
     # Feb 
     # Mar
