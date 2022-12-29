@@ -1,3 +1,5 @@
+#*** use extra sample text file (ex15_sample.txt) to open and read file within ex15.py. Opening a file create a file object (container) and reading the file prints out the text.
+
 from sys import argv
 
 script, filename = argv
