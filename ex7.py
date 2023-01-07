@@ -21,4 +21,6 @@ end12 = "r"
 
 print(end1 + end2 + end3 + end4 + end5 + end6, end = " ")
 print(end7 + end8 + end9 + end10 + end11 + end12)
-
+# By default, the print function ends with a newline. 
+#Passing the whitespace to the end parameter (end=‘ ‘) indicates that the end character has to be identified by whitespace and not a newline.
+    #RESULT: Cheese Burger
