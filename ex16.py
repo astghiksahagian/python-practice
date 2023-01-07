@@ -13,6 +13,8 @@ target = open(filename, "w")
 
 # print("Truncating the file. Goodbye!")
 # target.truncate()
+^#commented out because .truncate() is not needed. using "w" as the 2nd argument in an open() opens the file for writing.
+    #if the file exists, the data is truncated(erased) and over-written. If the file does not exist, it will create it.
 
 print("Now I'm going to ask you for three lines.")
 
