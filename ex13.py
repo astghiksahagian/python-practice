@@ -16,6 +16,6 @@ print("Your on variable is:", on)
 print("Your you variable is:", you)
 
 
-fashion_favorite = input("What's your favorite type of clothing item or accessory? ")
+fashion_favorite = input(f"What's your favorite type of {look} or accessory? ")
 fashion_style = input("What's your favorite type of fashion style? ")
 #practice using input along with argv.
