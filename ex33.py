@@ -1,3 +1,5 @@
+#**TIP: Use Control + C to end a loop on the terminal
+
 
 #OPTION 1: takes in one argument to use as max number in range:
 def while_smaller (number):
