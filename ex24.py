@@ -39,7 +39,7 @@ formula = secret_formula(start_point)
 #different way of storing the multiple return values (e.g. beans, jars, crates) than the above.
 
 print("We'd have {} beans, {} jars, and {} crates.".format(*formula)
-# * unpacks an iterable (e.g. array, tupple) so that the values can be passed into their distinct arguments, instead of being grouped together like an array or tupple.
+# * unpacks an iterable (e.g. list, tupple) so that the values can be passed into their distinct arguments, instead of being grouped together like an array or tupple.
     # tupple is like an array, but consists of elements within parantheses(). Tupple is a phrase for multiple values.
 
 

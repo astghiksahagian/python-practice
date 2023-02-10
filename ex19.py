@@ -32,7 +32,7 @@ desserts(dessert_count + 10)
 desserts(30)
 desserts(30+10)
 desserts(int(input("How many desserts do we have?")) + 9)
-#this line takes the input (number given by user) and uses the int() function to conver the string to an integer. After that it adds the user input number to 9.
+#this line takes the input (number given by user) and uses the int() function to convertf the string to an integer. After that it adds the user input number to 9.
 #Ex.) userinput: 9 
     #  + 9
     #  = 18
