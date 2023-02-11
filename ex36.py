@@ -31,12 +31,13 @@ def start():
 
     if "mine" in room_choice or "my room" in room_choice:
         user_room()
-    elif "{friend1}" in room_choice or "{friend1}'s" in room_choice or "{friend1}'s room" in room_choice:
+    elif friend1 in room_choice or "{friend1}'s" in room_choice or "{friend1}'s room" in room_choice:
         friend1_room()
-    elif "{friend2}" in room_choice or "{friend2}'s" in room_choice or "{friend2}'s room" in room_choice:
+    elif friend2 in room_choice or "{friend2}'s" in room_choice or "{friend2}'s room" in room_choice:
         friend2_room()
     else: 
-        print("\nThat doesn't sound like you or either one of your friends. Let's try again :)\n")
+        print(f"{room_choice} does not match {friend1} or {friend2}")
+        # print("\nThat doesn't sound like you or either one of your friends. Let's try again :)\n")
         start()
 
 
@@ -52,13 +53,13 @@ def user_room():
     if "run" in action_choice or "run away" in action_choice or "run for my life" in action_choice:
         print(f"\nWhich room are you heading to now - {friend1}'s or {friend2}'s?\n")
 
-        room_choice2 = input("> ")
+        room_choice = input("> ")
 
         #below if and elif statements are not executing!!
         #friend1_room and friend2_room not running
-        if "{friend1}" in room_choice2 or "{friend1}'s" in room_choice2 or "{friend1}'s room" in room_choice2:
+        if friend1 in room_choice or "{friend1}'s" in room_choice or "{friend1}'s room" in room_choice:
             friend1_room()
-        elif "{friend2}" in room_choice2 or "{friend2}'s" in room_choice2 or "{friend2}'s room" in room_choice2:
+        elif friend2 in room_choice or "{friend2}'s" in room_choice or "{friend2}'s room" in room_choice:
             friend2_room()
         else:
             user_room()
@@ -78,16 +79,18 @@ def friend1_room():
     if "pet" in action_choice or "pet it" in action_choice or "pet cub" in action_choice or "pet bear cub" in action_choice:
         dead("\nIt looks like Mama bear was nearby and she took you straight down with one bite. Ouch!")
     elif "back away" in action_choice or "back away to enter another room" in action_choice or "back away and enter another room" in action_choice or "enter another room" in action_choice:
-        print(f"\nWhich room are you heading to now - yours or {friend2}'s?")
+        print(f"\nWhich room are you heading to now - yours or {friend2}'s?\n")
 
         room_choice = input("> ")
 
         if "mine" in room_choice or "my room" in room_choice:
             user_room()
-        elif "{friend2}" in room_choice or "{friend2}'s" in room_choice or "{friend2}'s room" in room_choice:
+        elif friend2 in room_choice or "{friend2}'s" in room_choice or "{friend2}'s room" in room_choice:
             friend2_room()
         else:
             friend1_room()
+    else:
+        friend1_room()
 
 def friend2_room():
     print(f"\nYou entered {friend2}'s room. Everything looks good so far.")
@@ -99,13 +102,13 @@ def friend2_room():
 
     action_choice = input("> ")
 
-    if "fight":
+    if "fight" in action_choice:
         dead("\nIt looks like that sound came from a bear, who successfuly ate you up. I guess it wasn't successful for you though :/")
-    elif "flight": 
-        print("Congrats! You made the smartest choice you can make in this game, you win!")
+    elif "flight" in action_choice: 
+        print("\nCongrats! You made the smartest choice you can make in this game, you win!")
         exit(0)
     else:
-        friend1_room()
+        friend2_room()
 
 start()
     
