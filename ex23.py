@@ -19,4 +19,3 @@ languages = open("languages.txt", encoding="utf-8")
 
 main(languages, input_encoding, error)
 
-#COME BACK TO THIS THURSDAY AFTERNOON. DO EX.24 AND EX.25.
