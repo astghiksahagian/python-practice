@@ -49,6 +49,7 @@ def while_smaller (number, increment):
 
 while_smaller(8, 2)
 
+
 #OPTION 3: use a for loop with range
 
 numbers = []
