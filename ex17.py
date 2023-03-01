@@ -7,7 +7,7 @@ script, from_file, to_file = argv
 print(f"Copying from {from_file} to {to_file}")
 
 in_file = open(from_file).read()
-#opening and reading content from ex15_sample.txt to prepapre to copy paste into ex16_sample.txt.
+#opening and reading content from ex15_sample.txt to prepare to copy paste into ex16_sample.txt.
 
 print(f"The input file is {len(in_file)} bytes long")
 #len() returns the length of the string that is passed; returns a number.
